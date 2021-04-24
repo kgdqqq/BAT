@@ -1,0 +1,46 @@
+@echo y|cacls "C:\Windows\System32\drivers\etc\hosts" /e /p everyone:w
+@echo\
+@echo 127.0.0.1 acroipm.adobe.com >>C:\Windows\System32\drivers\etc\hosts
+@echo\
+@echo 127.0.0.1 lmlicenses.wip4.adobe.com >>C:\Windows\System32\drivers\etc\hosts
+@echo\
+@echo 127.0.0.1 lm.licenses.adobe.com >>C:\Windows\System32\drivers\etc\hosts
+@echo\
+@echo 127.0.0.1 flash.cn >>C:\Windows\System32\drivers\etc\hosts
+@echo\
+@echo 127.0.0.1 www.flash.cn >>C:\Windows\System32\drivers\etc\hosts
+@echo\
+@echo 127.0.0.1 geo2.adobe.com >>C:\Windows\System32\drivers\etc\hosts
+@echo\
+@echo 127.0.0.1 activate.adobe.com >>C:\Windows\System32\drivers\etc\hosts
+@echo\
+@echo 127.0.0.1 practivate.adobe.com >>C:\Windows\System32\drivers\etc\hosts
+@echo\
+@echo 127.0.0.1 ereg.wip3.adobe.com >>C:\Windows\System32\drivers\etc\hosts
+@echo\
+@echo 127.0.0.1 ereg.adobe.com >>C:\Windows\System32\drivers\etc\hosts
+@echo\
+@echo 127.0.0.1 activate.wip3.adobe.com >>C:\Windows\System32\drivers\etc\hosts
+@echo\
+@echo 127.0.0.1 wip3.adobe.com >>C:\Windows\System32\drivers\etc\hosts
+@echo\
+@echo 127.0.0.1 3dns-2.adobe.com >>C:\Windows\System32\drivers\etc\hosts
+@echo\
+@echo 127.0.0.1 3dns-3.adobe.com >>C:\Windows\System32\drivers\etc\hosts
+@echo\
+@echo 127.0.0.1 adobe-dns-3.adobe.com >>C:\Windows\System32\drivers\etc\hosts
+@echo\
+@echo 127.0.0.1 adobe-dns-2.adobe.com >>C:\Windows\System32\drivers\etc\hosts
+@echo\
+@echo 127.0.0.1 adobe-dns.adobe.com >>C:\Windows\System32\drivers\etc\hosts
+@echo\
+@echo 127.0.0.1 transact.netsarang.com >>C:\Windows\System32\drivers\etc\hosts
+@echo\
+@echo 127.0.0.1 update.netsarang.com >>C:\Windows\System32\drivers\etc\hosts
+@echo\
+@echo 127.0.0.1 www.netsarang.com >>C:\Windows\System32\drivers\etc\hosts
+@echo\
+@echo 127.0.0.1 www.netsarang.co.kr >>C:\Windows\System32\drivers\etc\hosts
+@echo\
+@echo 127.0.0.1 sales.netsarang.com >>C:\Windows\System32\drivers\etc\hosts
+@echo\
