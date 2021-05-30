@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\CABFolder\Shell\RunAs]
+@="安装该更新包"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\CABFolder\Shell\RunAs\Command]
+@="cmd /k dism /online /add-package /packagepath:\"%1\""
