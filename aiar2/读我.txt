@@ -1,0 +1,95 @@
+1:
+https://github.com/aria2/aria2/releases  下载aria2
+
+2:
+把    start.bat  放到aria2 根目录运行
+主要的目的是创建空空文件
+Aria2.log
+aria2.session
+D盘创建Download
+
+
+3:默认的下载目录在D盘  Download    如果需要修改   编辑aria2.conf
+
+
+4:运行 aria2c.vbs 启动程序
+
+5:     可选项 已管理员模式启动 start.reg   开机启动aria2c   (记得右键编辑程序路径)
+
+
+
+http://aria2c.com/   网页版
+
+命令行版 解说
+
+如果需要重命名的话加上–out或者-o参数
+
+aria2c --out=QQ http://dl_dir.qq.com/qqfile/qq/QQ2011/QQ2011.exe
+
+
+
+
+下载到指定的目录    范例      D:\download
+aria2c --dir D:\download ~ https://sm.myapp.com/original/channelpkg/qqpcmgr_v13.5.20525.234_1349_0.exe
+
+为了使用 aria2 的分段下载功能，并且将文件保存在D:\download  
+aria2c --dir D:\download -c  -s 2 -x 2 -j 10  http://dl_dir.qq.com/qqfile/qq/QQ2011/QQ2011.exe
+
+
+
+验证文件是否正确：
+
+有的时候为了确认下载的文件时候正确或是否被人修改需要验证md5码，这里可以使用一下命令
+
+aria2c -c -x16 -s20 -j20 --checksum=md5=xxxxxxxxxxxxx http://dl_dir.qq.com/qqfile/qq/QQ2011/QQ2011.exe
+
+
+
+高级篇
+
+bt下载
+
+aria2c ‘xxx.torrnet‘
+
+aria2c ‘磁力链接’
+
+
+
+有的文件下载是需要引用页，我们可以这样输入如
+
+aria2c --referer=http://im.qq.com/qq/2011/ ‘http://dl_dir.qq.com/qqfile/qq/QQ2011/QQ2011.exe’
+
+有时我们需要错误信息时要加上–log如
+
+aria2c --log=xxx --referer=http://im.qq.com/qq/2011/ ‘http://dl_dir.qq.com/qqfile/qq/QQ2011/QQ2011.exe’
+
+aria2c 'magnet:?xt=urn:btih:248D0A1CD08284299DE78D5C1ED359BB46717D8C' 
+
+
+
+
+每个主机使用两个连接来下载
+默认情况，每次下载连接到一台服务器的最大数目，对于一条主机只能建立一条。我们可以通过 aria2 命令行添加 -x2(2 表示两个连接)来创建到每台主机的多个连接，以加快下载速度。
+aria2c -x2 https://download.owncloud.org/community/owncloud-9.0.0.tar.bz2 
+
+
+
+
+
+
+
+我们也可以通过 aria2 命令行直接下载一个 Metalink 文件。
+aria2c https://curl.haxx.se/metalink.cgi?curl=tar.bz2 
+从一个密码保护网站下载一个文件。下面的命令行将会从一个密码保护网站中下载文件。
+aria2c --http-user=xxx --http-password=xxx https://download.owncloud.org/community/owncloud-9.0.0.tar.bz2 
+aria2c --ftp-user=xxx --ftp-password=xxx ftp://ftp.gnu.org/gnu/wget/wget-1.17.tar.gz 
+
+
+
+
+
+aria2c -x2 https://download.owncloud.org/community/owncloud-9.0.0.tar.bz2 
+
+
+
+
