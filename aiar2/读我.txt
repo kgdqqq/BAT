@@ -3,7 +3,7 @@ https://github.com/aria2/aria2/releases  下载aria2
 
 2:
 把    start.bat  放到aria2 根目录运行
-主要的目的是创建空空文件
+主要的目的是创建空文件
 Aria2.log
 aria2.session
 D盘创建Download
