@@ -1,0 +1,1 @@
+for /f  %%i in ('reg query HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USBSTOR') do @for /f %%x in ('reg query "%%i"') do @reg query "%%x" /v FriendlyName | findstr FriendlyName 
