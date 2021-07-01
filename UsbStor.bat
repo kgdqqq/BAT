@@ -1,0 +1,1 @@
+reg query HKLM\System\currentcontrolset\enum\usbstor  /s  >D:\usb.txt
